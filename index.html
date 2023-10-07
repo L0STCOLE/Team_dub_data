@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="description" content="Team Dubs">
+	<meta name="keywords" content="Team Dubs">
+	<meta name="author" content="Team Dubs">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script> <!-- Or use firebase-database.js for Realtime Database -->
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDTSjcB6T3gP7tyqrtu4yUIqmLPhX3U6uk",
+  	authDomain: "team-dubs.firebaseapp.com",
+    projectId: "team-dubs",
+  	storageBucket: "team-dubs.appspot.com",
+  	messagingSenderId: "674642938793",
+  	appId: "1:674642938793:web:ee8b495a49bdb9da4092b8",
+  	measurementId: "G-MBC1TQ60L4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 	<title>Team Dubs</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="icon" 
